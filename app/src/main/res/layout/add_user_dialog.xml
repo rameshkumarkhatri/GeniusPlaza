@@ -38,6 +38,7 @@
                                                    android:layout_margin="@dimen/_10dp"
                                                    android:textSize="@dimen/_20sp"
                                                    android:text="@string/add_user"
+                                                   android:id="@+id/btn_add"
         />
     </LinearLayout>
 </layout>

@@ -12,13 +12,15 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.mobifyall.geniusplaza.R
 import com.mobifyall.geniusplaza.adapter.AdapterUser
 import com.mobifyall.geniusplaza.databinding.MainFragmentBinding
+import com.mobifyall.geniusplaza.dialogs.AddUserDialog
 import com.mobifyall.geniusplaza.model.Model
 import com.mobifyall.geniusplaza.viewmodel.UserListViewModel
 import com.mobifyall.geniusplaza.views.UserListView
 
 class UserListFragment : Fragment(), UserListView, View.OnClickListener {
     override fun onClick(v: View?) {
-
+        val d = context?.let { AddUserDialog(it) }
+        d?.show()
     }
 
     override fun showResultLoadMore(result: Model.UsersData?) {
@@ -65,7 +67,7 @@ class UserListFragment : Fragment(), UserListView, View.OnClickListener {
     ): View? {
 
         binding = DataBindingUtil.inflate(inflater, R.layout.main_fragment, container, false);
-//        binding.f
+        binding.btnAdd.setOnClickListener(this)
         return binding.root;
     }
 

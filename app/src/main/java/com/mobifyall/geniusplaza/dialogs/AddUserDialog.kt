@@ -69,7 +69,7 @@ class AddUserDialog(context: Context) : Dialog(context), View.OnClickListener {
         super.onCreate(savedInstanceState)
         binding = AddUserDialogBinding.inflate(layoutInflater)
         setContentView(binding.root)
-        binding.imageView.setOnClickListener(this)
+        binding.btnAdd.setOnClickListener(this)
 
     }
 
