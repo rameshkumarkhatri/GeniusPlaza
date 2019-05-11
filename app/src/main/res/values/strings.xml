@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">GeniusPlaza</string>
+    <string name="error_retry">Click here to try again</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email</string>
+    <string name="add_user">Add User</string>
+    <string name="error_first_name">Enter First Name</string>
+    <string name="error_last_name">Enter Last Name</string>
+    <string name="error_email">Enter Email</string>
+</resources>
