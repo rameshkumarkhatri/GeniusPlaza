@@ -48,7 +48,7 @@ class AddUserDialog(context: Context) : Dialog(context), View.OnClickListener {
 
         if(binding.etLName.text.isEmpty())
         {
-            binding.etLName.setError(context.getString(R.string.error_first_name))
+            binding.etLName.setError(context.getString(R.string.error_last_name))
             return null;
 
         }
